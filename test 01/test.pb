@@ -1,6 +1,6 @@
 ﻿EnableExplicit
 
-IncludeFile "../SBBT.pb" 
+IncludeFile "../sbbt.pb" 
 
 ; In this example the key is treated as a numeric value.
 ; The value associated to the node is used for counting of the number of times each number has been extracted.
@@ -50,8 +50,9 @@ sbbt::EnumEnd(t)
 Debug "Lowest key = " + Str(sbbt::GetLowestKey(t))
 Debug "Highest key = " + Str(sbbt::GetHighestKey(t))
 
+sbbt::Free(t)
 ; IDE Options = PureBasic 6.01 LTS (Windows - x86)
-; CursorPosition = 28
+; CursorPosition = 52
 ; FirstLine = 4
 ; EnableXP
 ; EnableUser

@@ -2,7 +2,7 @@
 
 ; ASCENDING ORDERED INPUT
 
-IncludeFile "../SBBT.pb" 
+IncludeFile "../sbbt.pb" 
 
 IncludeFile "../utils/treeview.pb" ; simple tree viewer 
 
@@ -36,6 +36,8 @@ Debug "Tree nodes = " + sbbt::Count(t)
 
 TreeView(t, 1200, 600)    
 
+sbbt::Free(t)
+
 ; as numbers
 
 Define key
@@ -53,9 +55,10 @@ Debug "Tree nodes = " + sbbt::Count(t)
 
 TreeView(t, 1200, 600)    
 
+sbbt::Free(t)
 ; IDE Options = PureBasic 6.01 LTS (Windows - x86)
-; CursorPosition = 33
-; FirstLine = 6
+; CursorPosition = 39
+; FirstLine = 7
 ; EnableXP
 ; EnableUser
 ; CPU = 1

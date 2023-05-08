@@ -2,7 +2,7 @@
 
 ; RANDOMLY ORDERED INPUT
 
-IncludeFile "../SBBT.pb" 
+IncludeFile "../sbbt.pb" 
 
 IncludeFile "../utils/treeview.pb" ; simple tree viewer 
 
@@ -18,6 +18,7 @@ Define pad = Len(Str(#nodes))
 ; Prepare an array of all the numbers between 1 and #nodes
 Dim arr(#nodes)
 For j = 1 To #nodes : arr(j) = j : Next
+
 ; And randomize its contents
 RandomizeArray(arr(), 1, #nodes)
 
@@ -33,8 +34,10 @@ Debug "Tree height = " + sbbt::GetHeight(t)
 Debug "Tree nodes = " + sbbt::Count(t)
 
 TreeView(t, 1200, 600)
+
+sbbt::Free(t)
 ; IDE Options = PureBasic 6.01 LTS (Windows - x86)
-; CursorPosition = 27
+; CursorPosition = 37
 ; EnableXP
 ; EnableUser
 ; CPU = 1

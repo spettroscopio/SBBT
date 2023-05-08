@@ -2,7 +2,7 @@
 
 ; Example of EnumStartFrom(), a variant of EnumStart()
 
-IncludeFile "../SBBT.pb" 
+IncludeFile "../sbbt.pb" 
 
 IncludeFile "../utils/treeview.pb" ; simple tree viewer 
 
@@ -68,10 +68,9 @@ If sbbt::Search(t, 30) ; the node I've been looking for
     
 EndIf
 
-
+sbbt::Free(t)
 ; IDE Options = PureBasic 6.01 LTS (Windows - x86)
-; CursorPosition = 42
-; FirstLine = 23
+; CursorPosition = 4
 ; EnableXP
 ; EnableUser
 ; CPU = 1
