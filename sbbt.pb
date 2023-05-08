@@ -17,7 +17,7 @@
 ; A self-balancing binary tree based on the AA-Tree data structure as defined by Arne Andersson.
 ; http://en.wikipedia.org/wiki/AA_tree
 ; A self-balancing tree keeps its height to the minimum, so its lookup operations are faster and it does not degenerate into a list 
-; in case it's feeded with a sorted input.
+; in case it has been fed with a sorted input.
 
 ; Insertions and deletions are costly operations compared to other data structures, anyway it has some advantages:
 
@@ -1159,7 +1159,7 @@ EndProcedure
 EndModule
 
 ; IDE Options = PureBasic 6.01 LTS (Windows - x86)
-; CursorPosition = 16
+; CursorPosition = 19
 ; Folding = PAA9--------
 ; EnableXP
 ; EnableUser
