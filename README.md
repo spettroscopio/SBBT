@@ -2,7 +2,6 @@
  Self Balancing Binary Tree (1.20) for PureBasic.
  
 A self-balancing binary tree based on the AA-Tree data structure as defined by Arne Andersson.<br>
-https://en.wikipedia.org/wiki/Search_tree<br>
 http://en.wikipedia.org/wiki/AA_tree<br>
 
 A self-balancing tree keeps its height to the minimum, so its lookup operations are faster and it does not degenerate into a list in case it's feeded with a sorted input.<br>
