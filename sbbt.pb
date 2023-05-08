@@ -4,7 +4,7 @@
 ;
 ; Implementation of a Self-Balancing Binary Tree.
 ;
-; 1.20, Sep 16 2021, PB 5.73
+; 1.20, May 06 2023, PB 6.01
 ; Reworked, added the ability to have an integer or a string as the key, added some new functions.
 ;
 ; 1.10, Jan 06 2018, PB 5.61
@@ -1160,7 +1160,7 @@ EndProcedure
 EndModule
 
 ; IDE Options = PureBasic 6.01 LTS (Windows - x86)
-; CursorPosition = 29
+; CursorPosition = 6
 ; Folding = PAA9--------
 ; EnableXP
 ; EnableUser
