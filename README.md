@@ -1,4 +1,4 @@
-# SBBT
+# SBBT (Self Balancing Binary Tree)
  Self Balancing Binary Tree (1.20) for PureBasic.
  
 A self-balancing binary tree based on the AA-Tree data structure as defined by Arne Andersson.<br>
