@@ -1,6 +1,6 @@
 ﻿; *********************************************************************************************************************
 ; sbbt.pb
-; by Luis
+; by luis
 ;
 ; Implementation of a Self-Balancing Binary Tree.
 ;
@@ -1158,8 +1158,8 @@ EndProcedure
 
 EndModule
 
-; IDE Options = PureBasic 6.01 LTS (Windows - x86)
-; CursorPosition = 19
+; IDE Options = PureBasic 6.02 LTS (Windows - x86)
+; CursorPosition = 2
 ; Folding = PAA9--------
 ; EnableXP
 ; EnableUser
