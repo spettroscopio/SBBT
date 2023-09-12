@@ -48,7 +48,7 @@ If sbbt::Search(t, 30) ; the node I've been looking for
     
     Debug "ascending ..."
     
-    sbbt::EnumStartFrom(t, n, sbbt::#EnumAscending)
+    sbbt::EnumStartFrom(t, n, sbbt::#Ascending)
     
     While sbbt::EnumNext(t)
         Debug sbbt::GetKey(t)
@@ -58,7 +58,7 @@ If sbbt::Search(t, 30) ; the node I've been looking for
     
     Debug "descending ..."
     
-    sbbt::EnumStartFrom(t, n, sbbt::#EnumDescending)
+    sbbt::EnumStartFrom(t, n, sbbt::#Descending)
     
     While sbbt::EnumNext(t)
         Debug sbbt::GetKey(t)
@@ -69,8 +69,9 @@ If sbbt::Search(t, 30) ; the node I've been looking for
 EndIf
 
 sbbt::Free(t)
-; IDE Options = PureBasic 6.01 LTS (Windows - x86)
-; CursorPosition = 4
+; IDE Options = PureBasic 6.02 LTS (Windows - x86)
+; CursorPosition = 60
+; FirstLine = 21
 ; EnableXP
 ; EnableUser
 ; CPU = 1

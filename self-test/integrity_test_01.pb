@@ -88,7 +88,7 @@ Debug Str(count) + " nodes enumerated"
 
 Debug "Enumerate all nodes descending ..."
 count = 0
-sbbt::EnumStart(t, sbbt::#EnumDescending)
+sbbt::EnumStart(t, sbbt::#Descending)
 While sbbt::EnumNext(t)           
     If sbbt::GetValue(t) <> #nodes - count
         ; the val of the key has been stored in the node, they must always match
@@ -232,10 +232,9 @@ sbbt::Free(t)
 Debug "Self test completed, all seems fine."
 
 STOP ("SELF TEST")
-; IDE Options = PureBasic 6.01 LTS (Windows - x86)
-; CursorPosition = 229
-; FirstLine = 182
-; Folding = -
+; IDE Options = PureBasic 6.02 LTS (Windows - x86)
+; CursorPosition = 87
+; FirstLine = 86
 ; Optimizer
 ; EnableXP
 ; EnableUser

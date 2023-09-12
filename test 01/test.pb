@@ -25,11 +25,11 @@ Next
 
 Debug "Unique numbers inserted = " + Str(sbbt::Count(t))
 
-Debug "List the sorted numbers and print with their occurrences ..."
+Debug "List the sorted numbers and print the number of their occurrences ..."
 
 Debug "ascending ..."
 
-sbbt::EnumStart(t, sbbt::#EnumAscending)
+sbbt::EnumStart(t, sbbt::#Ascending)
 
 While sbbt::EnumNext(t)
     Debug Str (sbbt::GetKey(t)) + " x " + Str(sbbt::GetValue(t)) + " times"
@@ -39,7 +39,7 @@ sbbt::EnumEnd(t)
 
 Debug "descending ..."
 
-sbbt::EnumStart(t, sbbt::#EnumDescending)
+sbbt::EnumStart(t, sbbt::#Descending)
 
 While sbbt::EnumNext(t)
     Debug Str (sbbt::GetKey(t)) + " x " + Str(sbbt::GetValue(t)) + " times"
@@ -51,9 +51,9 @@ Debug "Lowest key = " + Str(sbbt::GetLowestKey(t))
 Debug "Highest key = " + Str(sbbt::GetHighestKey(t))
 
 sbbt::Free(t)
-; IDE Options = PureBasic 6.01 LTS (Windows - x86)
-; CursorPosition = 52
-; FirstLine = 4
+; IDE Options = PureBasic 6.02 LTS (Windows - x86)
+; CursorPosition = 27
+; FirstLine = 3
 ; EnableXP
 ; EnableUser
 ; CPU = 1
