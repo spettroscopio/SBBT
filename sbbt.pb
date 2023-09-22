@@ -4,6 +4,9 @@
 ;
 ; Implementation of a Self-Balancing Binary Tree.
 ;
+; 1.21 Sep 21 2023, PB 6.02
+; Renamed GetTop*() to GetParent*()
+;
 ; 1.20, May 06 2023, PB 6.01
 ; Reworked, added the ability to have an integer or a string as the key, added some new functions.
 ;
@@ -78,10 +81,10 @@ Declare     DecValue (t) ; Decrements the value associated with the current node
 Declare     DecValueOf (t, n) ; Decrements the value associated with the specified node.
 Declare.i   GetLeft (t) ; Returns the node to the left of the current node.
 Declare.i   GetRight (t) ; Returns the node to the right of the current node.
-Declare.i   GetTop (t) ; Returns the address of the parent of the current node, or 0 if there is no such node.
+Declare.i   GetParent (t) ; Returns the address of the parent of the current node, or 0 if there is no such node.
 Declare.i   GetLeftOf (t, n) ; Returns the address of the node to the left of the specified node, or 0 if there is no such node.
 Declare.i   GetRightOf (t, n) ; Returns the address of the node to the right of the specified node, or 0 if there is no such node.
-Declare.i   GetTopOf (t, n) ; Returns the address of the parent of the specified node, 0 if there is no such node.
+Declare.i   GetParentOf (t, n) ; Returns the address of the parent of the specified node, 0 if there is no such node.
 Declare.i   GetFirst (t) ; Returns the address of the node with the lowest key, or 0 if there are no nodes.
 Declare.i   GetLast (t) ; Returns the address of the node with the highest key, or 0 if there are no nodes.
 Declare.i   GoFirst (t) ; Jumps to the node with the lowest key and makes it the current node.
@@ -854,7 +857,7 @@ Procedure.i GetCurrent (t)
 EndProcedure
 
 Procedure.i GetKeyType (t)
-;> Returns the key type of the tree.
+;> Returns the key type of the tree (#PB_Integer or #PB_String).
 
  Protected *t.SbbtObj = t
  ProcedureReturn *t\KeyType
@@ -1043,7 +1046,7 @@ Procedure.i GetRight (t)
  ProcedureReturn *t\CurrentNode\right
 EndProcedure
 
-Procedure.i GetTop (t)
+Procedure.i GetParent (t)
 ;> Returns the address of the parent of the current node, or 0 if there is no such node.
 
  Protected *t.SbbtObj = t
@@ -1066,7 +1069,7 @@ Procedure.i GetRightOf (t, n)
  ProcedureReturn *n\right
 EndProcedure
 
-Procedure.i GetTopOf (t, n)
+Procedure.i GetParentOf (t, n)
 ;> Returns the address of the parent of the specified node, 0 if there is no such node.
 
  Protected *t.SbbtObj = t
@@ -1160,8 +1163,6 @@ EndProcedure
 EndModule
 
 ; IDE Options = PureBasic 6.02 LTS (Windows - x86)
-; CursorPosition = 552
-; FirstLine = 102
 ; EnableXP
 ; EnableUser
 ; CPU = 1

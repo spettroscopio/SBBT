@@ -7,7 +7,7 @@ IncludeFile "../sbbt.pb"
 IncludeFile "../utils/treeview.pb" ; simple tree viewer 
 
 ; In this example is possible to see how even in the worst case scenario of an ordered input sequence 
-; the tree is kept at low height and it does not degenerate into a list as it would happen with 
+; the tree is kept at a low height and it does not degenerate into a list as it would happen with 
 ; a normal binary tree.
 
 #nodes = 50
@@ -56,9 +56,8 @@ Debug "Tree nodes = " + sbbt::Count(t)
 TreeView(t, 1200, 600)    
 
 sbbt::Free(t)
-; IDE Options = PureBasic 6.01 LTS (Windows - x86)
-; CursorPosition = 39
-; FirstLine = 7
+; IDE Options = PureBasic 6.02 LTS (Windows - x86)
+; CursorPosition = 10
 ; EnableXP
 ; EnableUser
 ; CPU = 1

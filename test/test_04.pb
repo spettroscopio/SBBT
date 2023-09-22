@@ -35,6 +35,7 @@ Next
 
 Debug "Tree height = " + sbbt::GetHeight(t)
 Debug "Tree nodes = " + sbbt::Count(t)
+Debug ""
 Debug "I'm going to look for the node with key = 30"
 
 TreeView(t, 1200, 600)    
@@ -46,6 +47,7 @@ If sbbt::Search(t, 30) ; the node I've been looking for
     
     Debug "The starting node I've just looked for is: " + sbbt::GetKey(t)
     
+    Debug ""
     Debug "ascending ..."
     
     sbbt::EnumStartFrom(t, n, sbbt::#Ascending)
@@ -56,6 +58,7 @@ If sbbt::Search(t, 30) ; the node I've been looking for
     
     sbbt::EnumEnd(t)
     
+    Debug ""
     Debug "descending ..."
     
     sbbt::EnumStartFrom(t, n, sbbt::#Descending)
@@ -70,8 +73,8 @@ EndIf
 
 sbbt::Free(t)
 ; IDE Options = PureBasic 6.02 LTS (Windows - x86)
-; CursorPosition = 60
-; FirstLine = 21
+; CursorPosition = 37
+; FirstLine = 17
 ; EnableXP
 ; EnableUser
 ; CPU = 1

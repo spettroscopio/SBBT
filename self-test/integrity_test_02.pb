@@ -66,7 +66,7 @@ Repeat
     ; check left leaf    
     *ll = sbbt::GetLeft(t)    
     If *ll
-        If sbbt::GetTopOf(t, *ll) <> *cur
+        If sbbt::GetParentOf(t, *ll) <> *cur
             CallDebugger ; must never happen 
         EndIf 
     EndIf
@@ -74,7 +74,7 @@ Repeat
     ; check right leaf    
     *lr = sbbt::GetRight(t)    
     If *lr        
-        If sbbt::GetTopOf(t, *lr) <> *cur            
+        If sbbt::GetParentOf(t, *lr) <> *cur            
             CallDebugger ; must never happen 
         EndIf 
     EndIf
@@ -100,7 +100,7 @@ While sbbt::EnumNext(t)
     ; check left leaf    
     *ll = sbbt::GetLeft(t)    
     If *ll
-        If sbbt::GetTopOf(t, *ll) <> *cur
+        If sbbt::GetParentOf(t, *ll) <> *cur
             CallDebugger ; must never happen 
         EndIf 
     EndIf
@@ -108,7 +108,7 @@ While sbbt::EnumNext(t)
     ; check right leaf    
     *lr = sbbt::GetRight(t)    
     If *lr        
-        If sbbt::GetTopOf(t, *lr) <> *cur            
+        If sbbt::GetParentOf(t, *lr) <> *cur            
             CallDebugger ; must never happen 
         EndIf 
     EndIf
@@ -207,10 +207,9 @@ sbbt::Free(t)
 Debug "Self test completed, all seems fine."
 
 
-; IDE Options = PureBasic 6.01 LTS (Windows - x86)
-; CursorPosition = 204
-; FirstLine = 157
-; Folding = -
+; IDE Options = PureBasic 6.02 LTS (Windows - x86)
+; CursorPosition = 118
+; FirstLine = 106
 ; Optimizer
 ; EnableXP
 ; EnableUser

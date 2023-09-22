@@ -17,7 +17,7 @@ Procedure DrawNode (t, n, w, *x.Integer, *y.Integer, level)
         key$ = sbbt::GetKeyStrOf(t, n)
     EndIf
     
-    top = sbbt::GetTopOf(t, n)
+    top = sbbt::GetParentOf(t, n)
     
     If top
         If sbbt::GetKeyType(t) = #PB_Integer
@@ -126,8 +126,9 @@ Procedure TreeView (t, w, h)
  EndIf  
 EndProcedure
 
-; IDE Options = PureBasic 6.01 LTS (Windows - x86)
-; Folding = -
+; IDE Options = PureBasic 6.02 LTS (Windows - x86)
+; CursorPosition = 19
+; FirstLine = 15
 ; EnableXP
 ; EnableUser
 ; CPU = 1
